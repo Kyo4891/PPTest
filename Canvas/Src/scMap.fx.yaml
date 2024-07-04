@@ -1,0 +1,99 @@
+scMap As screen:
+    BackgroundImage: =
+    Fill: =RGBA(196, 156, 132, 1)
+    ImagePosition: =ImagePosition.Stretch
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    conMap As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =Parent.Height-10
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width-10
+        X: =5
+        Y: =5
+        ZIndex: =1
+
+        conMapNav As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Start
+            DropShadow: =DropShadow.Light
+            FillPortions: =0
+            Height: =50
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =Parent.Width
+            ZIndex: =1
+
+            icoHome_3 As image:
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =50
+                Image: =IcoFarcaster
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
+                OnSelect: =Navigate(scHome)
+                Width: =50
+                ZIndex: =1
+
+            "tabMaps As 'Tab list'.pcfdataset":
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =21
+                Height: =50
+                Items: =["雪山","密林","沙漠","沼地","森丘","火山","舊火山","舊密林","舊沙漠","舊沼地"]
+                LayoutMinHeight: =55
+                LayoutMinWidth: =280
+                Width: =Parent.Width - icoHome_3.Width
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+        conMapBody As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Light
+            Height: =Parent.Height - conMapNav.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =Parent.Width
+            ZIndex: =3
+
+            imgMap As image:
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =Parent.Width
+                Image: |
+                    =Switch(
+                        tabMaps.Selected.Value,
+                        "雪山", SnowyMoutains,
+                        "密林", Jungle,
+                        "沙漠", Desert,
+                        "沼地", Swamp,
+                        "森丘", ForrestAndHills,
+                        "火山", Volcano,
+                        "舊火山", OldVolcano,
+                        "舊密林", OldJungle,
+                        "舊沙漠", OldDesert,
+                        "舊沼地", OldSwamp
+                    )
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
+                Width: =Parent.Width
+                ZIndex: =2
+

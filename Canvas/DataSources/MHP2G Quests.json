@@ -1,0 +1,101 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr979_mhp2gquestses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr979_mhp2gquests",
+    "MaxGetRowsCount": 500,
+    "Name": "MHP2G Quests",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "axo_gp": "GP",
+      "axo_reward": "Reward",
+      "cr979_mhp2gquests_AsyncOperations": "System Jobs",
+      "cr979_mhp2gquests_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr979_mhp2gquests_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr979_mhp2gquests_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr979_mhp2gquests_ProcessSession": "Process Sessions",
+      "cr979_mhp2gquests_SyncErrors": "Sync Errors",
+      "cr979_mhp2gquestsid": "MHP2G Quests GUID",
+      "cr979_name": "Name",
+      "cr979_questlocation": "QuestLocation",
+      "cr979_questtype": "QuestType",
+      "cr979_stars": "Stars",
+      "cr979_title": "Title",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "MHP2G Quests",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "MHP2G Quests (Views)",
+    "Name": "_cr979_mhp2gquests_views",
+    "RelatedEntityName": "MHP2G Quests",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "19704cee-63a7-4b90-a363-106ef77f2b43": "MHP2G Quests Advanced Find View",
+      "7d653498-34ad-4afd-8750-320bac6b1f64": "Active MHP2G Questss",
+      "a06d7553-74b1-43b5-b77e-d380c854b251": "MHP2G Quests Lookup View",
+      "c6f74a22-4c25-415b-a2db-e6db80ca49d6": "Inactive MHP2G Questss",
+      "fab3fae0-601b-4075-aec3-430b8014e6db": "MHP2G Quests Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (MHP2G Quests)",
+    "Name": "cr979_mhp2gquests_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "MHP2G Quests"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "MHP2G Quests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (MHP2G Quests)",
+    "Name": "cr979_mhp2gquests_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "MHP2G Quests"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "MHP2G Quests",
+    "Type": "OptionSetInfo"
+  }
+]
