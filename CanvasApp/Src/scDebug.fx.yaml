@@ -5,6 +5,7 @@ scDebug As screen:
     TextCanvas2 As Text:
         DisplayMode: =DisplayMode.Edit
         Height: =32
+        Text: ="Text2"
         Width: =96
         X: =40
         Y: =40
