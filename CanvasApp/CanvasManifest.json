@@ -138,6 +138,7 @@
     "scFoodEffects",
     "scItemCombination",
     "scQuests",
-    "scMap"
+    "scMap",
+    "scDebug"
   ]
 }
