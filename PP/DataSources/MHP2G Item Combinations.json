@@ -1,0 +1,102 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr979_mhp2gitemcombinations",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr979_mhp2gitemcombination",
+    "MaxGetRowsCount": 500,
+    "Name": "MHP2G Item Combinations",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr979_combinationnumber": "CombinationNumber",
+      "cr979_combinationoutcome": "CombinationOutcome",
+      "cr979_ingredient1": "Ingredient1",
+      "cr979_ingredient2": "Ingredient2",
+      "cr979_mhp2gitemcombination_AsyncOperations": "System Jobs",
+      "cr979_mhp2gitemcombination_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr979_mhp2gitemcombination_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr979_mhp2gitemcombination_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr979_mhp2gitemcombination_ProcessSession": "Process Sessions",
+      "cr979_mhp2gitemcombination_SyncErrors": "Sync Errors",
+      "cr979_mhp2gitemcombinationid": "MHP2GItemCombination",
+      "cr979_nameid": "NameId",
+      "cr979_notes": "Notes",
+      "cr979_quantity": "Quantity",
+      "cr979_successrate": "SuccessRate",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "MHP2G Item Combinations",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "MHP2G Item Combinations (Views)",
+    "Name": "_cr979_mhp2gitemcombination_views",
+    "RelatedEntityName": "MHP2G Item Combinations",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "218e57a1-d804-4417-8785-f373c3fae100": "MHP2GItemCombination Associated View",
+      "4e4db7d6-f27e-4c06-9c62-e5cee31c7c8f": "Active MHP2GItemCombinations",
+      "60399485-8e3f-4d6c-b761-92f95acd6b78": "MHP2GItemCombination Advanced Find View",
+      "df85177c-27d5-461f-a023-178157065a5a": "MHP2GItemCombination Lookup View",
+      "fe8b7dea-cac3-4310-b251-04d246188709": "Inactive MHP2GItemCombinations"
+    }
+  },
+  {
+    "DisplayName": "Status (MHP2G Item Combinations)",
+    "Name": "cr979_mhp2gitemcombination_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "MHP2G Item Combinations"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "MHP2G Item Combinations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (MHP2G Item Combinations)",
+    "Name": "cr979_mhp2gitemcombination_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "MHP2G Item Combinations"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "MHP2G Item Combinations",
+    "Type": "OptionSetInfo"
+  }
+]

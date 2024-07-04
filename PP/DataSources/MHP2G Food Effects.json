@@ -1,0 +1,98 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr979_mhp2gfoodeffectses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr979_mhp2gfoodeffects",
+    "MaxGetRowsCount": 500,
+    "Name": "MHP2G Food Effects",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr979_foodeffects": "FoodEffects",
+      "cr979_mhp2gfoodeffects_AsyncOperations": "System Jobs",
+      "cr979_mhp2gfoodeffects_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr979_mhp2gfoodeffects_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr979_mhp2gfoodeffects_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr979_mhp2gfoodeffects_ProcessSession": "Process Sessions",
+      "cr979_mhp2gfoodeffects_SyncErrors": "Sync Errors",
+      "cr979_mhp2gfoodeffectsid": "MHP2G Food Effects",
+      "cr979_nameid": "NameId",
+      "cr979_numofcats": "NumOfCats",
+      "cr979_title": "Title",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "MHP2G Food Effects",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "MHP2G Food Effects (Views)",
+    "Name": "_cr979_mhp2gfoodeffects_views",
+    "RelatedEntityName": "MHP2G Food Effects",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0b92bc3e-6639-4001-a508-2c9a409e2d1f": "MHP2G Food Effects Lookup View",
+      "42a141e1-a338-48a0-935e-580cbb76569f": "MHP2G Food Effects Advanced Find View",
+      "66b41ca3-e3aa-40fd-b1ed-1a70fb5b9183": "MHP2G Food Effects Associated View",
+      "8fed08bd-a400-452b-af8d-059cb7227a50": "Inactive MHP2G Food Effectss",
+      "b0e28cd3-a140-45e1-b2fc-0643b37b6899": "Active MHP2G Food Effectss"
+    }
+  },
+  {
+    "DisplayName": "Status (MHP2G Food Effects)",
+    "Name": "cr979_mhp2gfoodeffects_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "MHP2G Food Effects"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "MHP2G Food Effects",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (MHP2G Food Effects)",
+    "Name": "cr979_mhp2gfoodeffects_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "MHP2G Food Effects"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "MHP2G Food Effects",
+    "Type": "OptionSetInfo"
+  }
+]

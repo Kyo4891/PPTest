@@ -1,0 +1,57 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_cr979_mhp2gfoodeffects_forms",
+      "Namespace": "MHP2G Food Effects (Forms)",
+      "Values": {
+        "Information": "e243bc10-9c30-417a-b589-7b8d1d49d49e"
+      }
+    },
+    {
+      "Kind": "default.cds_cr979_mhp2gquests_forms",
+      "Namespace": "MHP2G Quests (Forms)",
+      "Values": {
+        "Information": "4985c433-a8e6-433b-8622-93d7712e784e"
+      }
+    },
+    {
+      "Kind": "default.cds_cr979_mhp2gitemcombination_forms",
+      "Namespace": "MHP2G Item Combinations (Forms)",
+      "Values": {
+        "Information": "f21ab44f-b823-4a34-aed1-e9aa0cb90730"
+      }
+    },
+    {
+      "Kind": "default.cds_systemuser_forms",
+      "Namespace": "Users (Forms)",
+      "Values": {
+        "Application User": "d26924ef-4d80-46f7-ab1d-e6ae80a54ce8",
+        "Information": "094fb08a-77bb-49e0-b7ea-8dbddfd01294",
+        "User": "c2cd9e55-d4b4-4b55-9951-16ead79643e5",
+        "User form – Business": "c2413504-7eb2-4c59-a087-95d819866114",
+        "User Hierarchy Tile Form": "c68d6c09-d7a7-4959-8d0f-44b8cff9b452"
+      }
+    },
+    {
+      "Kind": "default.cds_axo_mhp2gfoodeffect_forms",
+      "Namespace": "MHP2G Food Effects (Forms)1",
+      "Values": {
+        "Information": "3a023acc-51fc-402e-8a9a-8a676eabb3cc"
+      }
+    },
+    {
+      "Kind": "default.cds_axo_mhp2g_foodeffect_forms",
+      "Namespace": "Food Effects (Forms)",
+      "Values": {
+        "Information": "d13f1518-bfb4-4ab2-b67d-c9f25f597a35"
+      }
+    },
+    {
+      "Kind": "default.cds_cr979_mhp2gfoodeffects_forms",
+      "Namespace": "MHP2G Food Effects (Forms)11",
+      "Values": {
+        "Information": "e243bc10-9c30-417a-b589-7b8d1d49d49e"
+      }
+    }
+  ]
+}
