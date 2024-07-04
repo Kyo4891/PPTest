@@ -1,0 +1,168 @@
+scItemCombination As screen:
+    Fill: =RGBA(196, 156, 132, 1)
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    conItemCombination As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =Parent.Height-10
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width-10
+        X: =5
+        Y: =5
+        ZIndex: =1
+
+        conItemCombinationNav As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Light
+            FillPortions: =0
+            Height: =50
+            LayoutMinHeight: =60
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =Parent.Width
+            ZIndex: =1
+
+            icoHome_1 As image:
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =50
+                Image: =IcoFarcaster
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
+                OnSelect: =Navigate(scHome)
+                Width: =50
+                ZIndex: =2
+
+        conItemCombinationBody As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Light
+            Height: =Parent.Height-conItemCombination.Height
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =Parent.Width
+            ZIndex: =3
+
+            "galItemCombination As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                AlignInContainer: =AlignInContainer.Start
+                BorderColor: =App.Theme.Colors.Darker40
+                DelayItemLoading: =true
+                Height: =Parent.Height
+                Items: ='MHP2G Item Combinations'
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =287
+                LayoutMinWidth: =320
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =50
+                ZIndex: =1
+
+                Separator2_2 As rectangle:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Fill: =RGBA(139, 154, 159, 1)
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - Self.Height
+                    ZIndex: =1
+
+                lblQuantityAndRate As label:
+                    Color: =RGBA(50, 49, 48, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    Overflow: =Overflow.Scroll
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =10
+                    Text: |-
+                        =ThisItem.SuccessRate & "%" &
+                        If(ThisItem.Notes = "－",
+                        "",
+                         " [" & ThisItem.Notes & "]"
+                        )
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =100
+                    X: =lblCombinationOutput.X + lblCombinationOutput.Width + 5
+                    Y: =
+                    ZIndex: =2
+
+                lblCombinationOutput As label:
+                    Color: =RGBA(50, 49, 48, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    Overflow: =Overflow.Scroll
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =18
+                    Text: =ThisItem.Quantity & "x " & ThisItem.CombinationOutcome
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =250
+                    X: =lblIngredient2.X + lblIngredient2.Width + 10
+                    Y: |-
+                        =//(Parent.TemplateHeight - (Self.Size * 1.8 )) / 2
+                        10
+                    ZIndex: =3
+
+                lblIngredient2 As label:
+                    Color: =RGBA(50, 49, 48, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    Overflow: =Overflow.Scroll
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =ThisItem.Ingredient2
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =120
+                    X: =lblIngredient1.X + lblIngredient1.Width + 10
+                    Y: |-
+                        =//(Parent.TemplateHeight - (Self.Size * 1.8 )) / 2
+                        10
+                    ZIndex: =4
+
+                lblIngredient1 As label:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    Height: =50
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =ThisItem.CombinationNumber & ". " & ThisItem.Ingredient1
+                    Width: =180
+                    X: =10
+                    ZIndex: =5
+

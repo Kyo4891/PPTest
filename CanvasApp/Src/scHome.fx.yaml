@@ -1,0 +1,255 @@
+"scHome As screen.'layout_Offline_ver1.0'":
+    BackgroundImage: =
+    Fill: =RGBA(168, 144, 123, 0.97)
+    ImagePosition: =ImagePosition.Stretch
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    conHomeMenu As groupContainer.verticalAutoLayoutContainer:
+        BorderStyle: =BorderStyle.None
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        conElderQuestMenuItem As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            FillPortions: =0
+            Height: =150 
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =30
+            Width: =Parent.Width
+            ZIndex: =1
+
+            icoHomeMenu1 As image:
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Image: =IcoGuildCrest100x100
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
+                ZIndex: =1
+
+            btnElderQuests As Button:
+                Align: =""
+                AlignInContainer: =AlignInContainer.Center
+                Appearance: ='ButtonCanvas.Appearance'.Transparent
+                BasePaletteColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FillPortions: =1
+                FontColor: =RGBA(0, 0, 0, 1)
+                FontSize: =30
+                FontWeight: =FontWeight.Bold
+                Height: =150
+                Icon: =""
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: |-
+                    =Set(varQuestLocation, "Elder");
+                    Navigate(scQuests)
+                Text: ="村長任務"
+                VerticalAlign: =""
+                Width: =Parent.Width*.8
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+        conGuildQuestMenuItem As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            FillPortions: =0
+            Height: =150 
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =30
+            Width: =Parent.Width
+            ZIndex: =2
+
+            icoHomeMenu1_1 As image:
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Image: =IcoGuildCrest100x100
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
+                ZIndex: =2
+
+            btnHubQuest As Button:
+                Align: =""
+                Appearance: ='ButtonCanvas.Appearance'.Transparent
+                BasePaletteColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =RGBA(0, 0, 0, 1)
+                FontSize: =30
+                FontWeight: =FontWeight.Bold
+                Height: =150
+                Icon: =""
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: |-
+                    =Set(varQuestLocation, "Guild");
+                    Navigate(scQuests)
+                Text: ="集會所任務"
+                VerticalAlign: =""
+                Width: =Parent.Width*.8
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+        conCombinationListMenuItem As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            FillPortions: =0
+            Height: =150 
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =30
+            Width: =Parent.Width
+            ZIndex: =3
+
+            icoHomeMenu1_2 As image:
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Image: =IcoGuildCrest100x100
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
+                ZIndex: =2
+
+            btnCombinationList As Button:
+                Align: =""
+                Appearance: ='ButtonCanvas.Appearance'.Transparent
+                BasePaletteColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =RGBA(0, 0, 0, 1)
+                FontSize: =30
+                FontWeight: =FontWeight.Bold
+                Height: =150
+                Icon: =""
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =Navigate(scItemCombination)
+                Text: ="材料合成表"
+                VerticalAlign: =""
+                Width: =Parent.Width*.8
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+        conFoodEffectsMenuItem As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            FillPortions: =0
+            Height: =150 
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =30
+            Width: =Parent.Width
+            ZIndex: =7
+
+            icoHomeMenu1_3 As image:
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Image: =IcoGuildCrest100x100
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
+                ZIndex: =2
+
+            btnFoodEffects As Button:
+                Align: =""
+                Appearance: ='ButtonCanvas.Appearance'.Transparent
+                BasePaletteColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =RGBA(0, 0, 0, 1)
+                FontSize: =30
+                FontWeight: =FontWeight.Bold
+                Height: =150
+                Icon: =""
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =Navigate(scFoodEffects)
+                Text: ="料理效果"
+                VerticalAlign: =""
+                Width: =Parent.Width*.8
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+        conResourceMapMenuItem As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            FillPortions: =0
+            Height: =150 
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =30
+            Width: =Parent.Width
+            ZIndex: =8
+
+            icoHomeMenu1_4 As image:
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Image: =IcoGuildCrest100x100
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
+                ZIndex: =2
+
+            btnResourceMap As Button:
+                Align: =""
+                Appearance: ='ButtonCanvas.Appearance'.Transparent
+                BasePaletteColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =RGBA(0, 0, 0, 1)
+                FontSize: =30
+                FontWeight: =FontWeight.Bold
+                Height: =150
+                Icon: =""
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =Navigate(scMap)
+                Text: ="地圖"
+                VerticalAlign: =""
+                Width: =Parent.Width*.8
+                X: =0
+                Y: =0
+                ZIndex: =3
+

@@ -1,0 +1,217 @@
+scQuests As screen:
+    BackgroundImage: =
+    Fill: =RGBA(196, 156, 132, 1)
+    ImagePosition: =ImagePosition.Stretch
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    conQuests As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =Parent.Height-10
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width-10
+        X: =5
+        Y: =5
+        ZIndex: =1
+
+        conQuestsNav As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Light
+            FillPortions: =0
+            Height: =50
+            LayoutMinHeight: =60
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =Parent.Width
+            ZIndex: =1
+
+            icoHome_Quests As image:
+                BorderColor: =App.Theme.Colors.Darker40
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =50
+                Image: =IcoFarcaster
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
+                OnSelect: =Navigate(scHome)
+                Width: =50
+                ZIndex: =1
+
+            "tabElderQuests As 'Tab list'.pcfdataset":
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =21
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                Items: =["一星","二星","三星","四星","五星","六星 (緊急)","七星","八星","九星"]
+                LayoutMinHeight: =55
+                LayoutMinWidth: =280
+                Visible: =If(varQuestLocation = "Elder", true)
+                Width: =Parent.Width - icoHome_Quests.Width
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+            "tabGuildQuests As 'Tab list'.pcfdataset":
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =21
+                FontWeight: =FontWeight.Semibold
+                Height: =Parent.Height
+                Items: |-
+                    =["一星","二星","三星","四星","五星","六星","七星","八星"]
+                    
+                    //["HR1", "HR2", "HR3", "HR4", "HR5", "HR6", "HR7", "HR8"]
+                LayoutMinHeight: =55
+                LayoutMinWidth: =280
+                Visible: =If(varQuestLocation = "Guild", true)
+                Width: =Parent.Width - icoHome_Quests.Width
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+        conQuestsBody As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Light
+            Height: =Parent.Height
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =Parent.Width
+            ZIndex: =3
+
+            "galQuests As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                AlignInContainer: =AlignInContainer.SetByContainer
+                BorderColor: =App.Theme.Colors.Darker40
+                DelayItemLoading: =true
+                Height: =Parent.Height
+                Items: |-
+                    =If(
+                        varQuestLocation = "Elder",
+                        Sort(
+                            Filter(
+                                'MHP2G Quests',
+                                Stars = Switch(
+                                    tabElderQuests.Selected.Value,
+                                    "一星", "1",
+                                    "二星", "2",
+                                    "三星", "3",
+                                    "四星", "4",
+                                    "五星", "5",
+                                    "六星 (緊急)", "6",
+                                    "七星", "7",
+                                    "八星", "8",
+                                    "九星", "9"
+                                )
+                                And 
+                                QuestLocation = varQuestLocation
+                            ),
+                            Title,SortOrder.Ascending
+                        ),
+                        varQuestLocation = "Guild",
+                        Sort(
+                            Filter(
+                                'MHP2G Quests',
+                                Stars = Switch(
+                                    tabGuildQuests.Selected.Value,
+                                    "一星", "1",
+                                    "二星", "2",
+                                    "三星", "3",
+                                    "四星", "4",
+                                    "五星", "5",
+                                    "六星", "6",
+                                    "七星", "7",
+                                    "八星", "8"
+                                )
+                                And 
+                                QuestLocation = varQuestLocation
+                            ),
+                            Title,SortOrder.Ascending
+                        )
+                    )
+                    
+                    
+                    /*
+                    Sort(
+                        Filter(
+                            'MHP2G Quests',
+                            Stars = Switch(
+                                tabElderQuests.Selected.Value,
+                                "一星", "1",
+                                "二星", "2",
+                                "三星", "3",
+                                "四星", "4",
+                                "五星", "5",
+                                "六星 (緊急)", "6",
+                                "七星", "7",
+                                "八星", "8",
+                                "九星", "9"
+                            )
+                            And 
+                            QuestLocation = varQuestLocation
+                        ),
+                        Title,SortOrder.Ascending
+                    )
+                    */
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =287
+                LayoutMinWidth: =320
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =50
+                Width: =Parent.Width
+                ZIndex: =1
+
+                Separator2_1 As rectangle:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Fill: =RGBA(139, 154, 159, 1)
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - Self.Height
+                    ZIndex: =1
+
+                lblRewards As label:
+                    Align: =Align.Right
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    Height: =50
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =10
+                    PaddingTop: =0
+                    Size: =12
+                    Text: =ThisItem.Reward & "z + " & ThisItem.GP & "GP"
+                    Width: =Parent.Width-lblQuestInfo.X
+                    X: =10
+                    ZIndex: =2
+
+                lblQuestInfo As label:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    Height: =50
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =ThisItem.Title & " [" & ThisItem.QuestType & "] "
+                    Width: =Parent.Width-lblQuestInfo.X
+                    X: =10
+                    ZIndex: =3
+
