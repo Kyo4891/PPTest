@@ -215,12 +215,3 @@ scQuests As screen:
                     X: =10
                     ZIndex: =3
 
-    tempDebug As Text:
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Text: ="AAAAAAAAAAAAAAAAAAAAa"
-        Width: =96
-        X: =40
-        Y: =40
-        ZIndex: =2
-
