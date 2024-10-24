@@ -40,6 +40,7 @@
                 AlignInContainer: =AlignInContainer.Center
                 Appearance: ='ButtonCanvas.Appearance'.Transparent
                 BasePaletteColor: =
+                BorderColor: =RGBA(168, 144, 123, 0.97)
                 BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 FillPortions: =1
@@ -90,6 +91,7 @@
                 Align: =""
                 Appearance: ='ButtonCanvas.Appearance'.Transparent
                 BasePaletteColor: =
+                BorderColor: =RGBA(168, 144, 123, 0.97)
                 BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 FontColor: =RGBA(0, 0, 0, 1)

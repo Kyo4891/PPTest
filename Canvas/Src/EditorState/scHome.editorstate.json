@@ -328,7 +328,15 @@
         "IconStyle",
         "BorderStyle",
         "Align",
-        "VerticalAlign"
+        "VerticalAlign",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "BorderColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        }
       ],
       "DynamicProperties": [
         {
@@ -460,6 +468,11 @@
           "Category": "Data",
           "PropertyName": "IconStyle",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "BorderColor",
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -821,7 +834,15 @@
         "IconStyle",
         "BorderStyle",
         "Align",
-        "VerticalAlign"
+        "VerticalAlign",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "BorderColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        }
       ],
       "DynamicProperties": [
         {
@@ -946,6 +967,11 @@
           "Category": "Data",
           "PropertyName": "IconStyle",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "BorderColor",
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
