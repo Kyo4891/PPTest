@@ -6,7 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr979_mhp2gfoodeffects",
-    "MaxGetRowsCount": 500,
+    "MaxGetRowsCount": 750,
     "Name": "MHP2G Food Effects",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
