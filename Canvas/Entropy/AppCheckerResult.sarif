@@ -14,156 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsNav.icoHome.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsNav.icoHome.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "scFoodEffects",
-                "type": "scFoodEffects.conFoodEffects.conFoodEffectsNav.icoHome"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsNav.icoHome.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsNav.icoHome.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "scFoodEffects",
-                "type": "scFoodEffects.conFoodEffects.conFoodEffectsNav.icoHome"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsNav.tabNumberOfCats.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsNav.tabNumberOfCats.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "scFoodEffects",
-                "type": "scFoodEffects.conFoodEffects.conFoodEffectsNav.tabNumberOfCats"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsBody.galFoodEffects.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsBody.galFoodEffects.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "scFoodEffects",
-                "type": "scFoodEffects.conFoodEffects.conFoodEffectsBody.galFoodEffects"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsBody.galFoodEffects.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsBody.galFoodEffects.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "scFoodEffects",
-                "type": "scFoodEffects.conFoodEffects.conFoodEffectsBody.galFoodEffects"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "scHome.conHomeMenu.conElderQuestMenuItem.btnElderQuests.AccessibleLabel"
                 }
               ],
@@ -477,6 +327,156 @@
                 "member": "TabIndex",
                 "module": "scQuests",
                 "type": "scQuests.conQuests.conQuestsBody.galQuests"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsNav.icoHome.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsNav.icoHome.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scFoodEffects",
+                "type": "scFoodEffects.conFoodEffects.conFoodEffectsNav.icoHome"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsNav.icoHome.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsNav.icoHome.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "scFoodEffects",
+                "type": "scFoodEffects.conFoodEffects.conFoodEffectsNav.icoHome"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsNav.tabNumberOfCats.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsNav.tabNumberOfCats.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scFoodEffects",
+                "type": "scFoodEffects.conFoodEffects.conFoodEffectsNav.tabNumberOfCats"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsBody.galFoodEffects.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsBody.galFoodEffects.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scFoodEffects",
+                "type": "scFoodEffects.conFoodEffects.conFoodEffectsBody.galFoodEffects"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsBody.galFoodEffects.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scFoodEffects.conFoodEffects.conFoodEffectsBody.galFoodEffects.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "scFoodEffects",
+                "type": "scFoodEffects.conFoodEffects.conFoodEffectsBody.galFoodEffects"
               }
             }
           ],
